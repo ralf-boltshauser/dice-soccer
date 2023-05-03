@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Start new Round</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Minimum</mat-label>
+      <input matInput type="number" [(ngModel)]="min" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Maximum</mat-label>
+      <input matInput type="number" [(ngModel)]="max" />
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="startNewRound()">
+      Start
+    </button>
+  </mat-card-actions>
+</mat-card>
+<app-game></app-game>
